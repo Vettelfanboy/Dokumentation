@@ -4,9 +4,9 @@
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-| 23.8.22      | 0.0.1   |   |
+|23.08.22      | 0.0.1   |   |
 |       | ...     |                                                              |
-|       | 1.0.0   |                                                              |
+|06.09.22       | 1.0.0   |                                                              |
 
 ## 1 Informieren
 
@@ -21,7 +21,7 @@
 | 1    | Muss                |Funktional| Als ein Spieler möchte ich immer informiert werden, wie weit weg von der richtigen Zahl ich noch bin, damit ich immer bessere S chätzungen abgeben kann.|
 | 2    | Muss                |Funktional|  Als ein Programmierer möchte ich es gerne so haben, dass die gesuchte Zahl gut versteckt wird, aber auch gute Tipps sollen ausgeteilt werden, damit der Spieler nicht ewig raten muss.                                   |
 | 3    | Muss                |Qualität| Als ein Programmierer möchte ich, dass die Webseite nicht nach 20 falschen Antworten plötzlich abstürzt oder sonstige Faxen macht.
-| 4    | Muss                |Qualität| Als ein Spieler möchte ich, dass nach 2 falschen Schätzungen eine kleinere Zahlenspanne ausgegeben wird, damit man immer schneller zur richtigen Zahl kommt.             
+| 4    | Kann               |Qualität| Als ein Spieler möchte ich, dass nach 2 falschen Schätzungen eine kleinere Zahlenspanne ausgegeben wird, damit man immer schneller zur richtigen Zahl kommt.             
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 
 ### 1.3 Testfälle
@@ -29,8 +29,8 @@
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
 | 1.1  | Benutzer startet das Spiel | gibt eine Zahl ein | gesuchte Zahl ist grösser/kleiner |
-| 2.1  | Zahl finden beim Start | Zahl verstecken, Tipps vorbereiten | Tipp grösser/kleiner |                   |
-| 3.1  | 20 falsche Zahlen eingegeben | 21.Zahl eingeben | soll normal funktionieren wie immer |
+| 2.1  | Zahl finden beim Start | Zahl verstecken, Tipps vorbereiten | Tipp grösser/kleiner |                   
+| 3.1  | 2 falsche Zahlen eingegeben | 3.Zahl eingeben | soll normal funktionieren wie immer |
 | 4.1  | 2 falsche Zahlen eingegeben | erneut falsche Zahl eingeben | Zahlenspanne verkürzt (grosser Tipp) |
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
@@ -60,8 +60,10 @@ Total: 240 Minuten (4 Stunden)
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  | 30.08.22      |           |               |                   |
-| ...  |       |           |               |                   |
+| 1.A  | 06.09.22      |Veljkovic Simon           |60 Minuten               |90 Minuten                   |
+| 2.A | 06.09.22       |Veljkovic Simon           |60 Minuten               |90 Minuten                   |
+| 3.A | 06.09.22       |Veljkovic Simon           |60 Minuten               |90 Minuten                   |
+| 4.A | 06.09.22       |Veljkovic Simon           |60 Minuten               |nicht verwirklicht
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
