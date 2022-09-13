@@ -21,8 +21,9 @@
 | 1    | Muss                |Funktional| Als ein Spieler möchte ich immer informiert werden, wie weit weg von der richtigen Zahl ich noch bin, damit ich immer bessere S chätzungen abgeben kann.|
 | 2    | Muss                |Funktional|  Als ein Programmierer möchte ich es gerne so haben, dass die gesuchte Zahl gut versteckt wird, aber auch gute Tipps sollen ausgeteilt werden, damit der Spieler nicht ewig raten muss.                                   |
 | 3    | Muss                |Qualität| Als ein Programmierer möchte ich, dass die Webseite nicht nach 20 falschen Antworten plötzlich abstürzt oder sonstige Faxen macht.
-| 4    | Kann               |Qualität| Als ein Spieler möchte ich, dass nach 2 falschen Schätzungen eine kleinere Zahlenspanne ausgegeben wird, damit man immer schneller zur richtigen Zahl kommt.             
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
+| 4    | Muss                |Qualität| Als ein Programmierer möchte ich eine Falle bei ungültigen Zahlen einbauen, damit es wirklich nur an die Vorgabe limitiert ist
+| 5   | Kann               |Qualität| Als ein Spieler möchte ich, dass nach 2 falschen Schätzungen eine kleinere Zahlenspanne ausgegeben wird, damit man immer schneller zur richtigen Zahl kommt.             
+
 
 ### 1.3 Testfälle
 
@@ -31,12 +32,13 @@
 | 1.1  | Benutzer startet das Spiel | gibt eine Zahl ein | gesuchte Zahl ist grösser/kleiner |
 | 2.1  | Zahl finden beim Start | Zahl verstecken, Tipps vorbereiten | Tipp grösser/kleiner |                   
 | 3.1  | 2 falsche Zahlen eingegeben | 3.Zahl eingeben | soll normal funktionieren wie immer |
-| 4.1  | 2 falsche Zahlen eingegeben | erneut falsche Zahl eingeben | Zahlenspanne verkürzt (grosser Tipp) |
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
+| 4.1  | ungültige Zahl eingegeben | nichts mehr möglich bzw. Spiel manipuliert
+| 5.1  | 2 falsche Zahlen eingegeben | erneut falsche Zahl eingeben | Zahlenspanne verkürzt (grosser Tipp) |
+
 
 ### 1.4 Diagramme
 
-✍️ Hier können Sie PAPs, Use Case- und Gantt-Diagramme oder Ähnliches einfügen.
+
 
 ## 2 Planen
 
@@ -48,24 +50,25 @@
 | 4.A  | 06.09.22 | Veljkovic Simon | nach einer bestimmten Anzahl Schätzungen kleinere Zeitspanne einsetzen | 60 Minuten |
 Total: 240 Minuten (4 Stunden)
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
 
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
+
+
 
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+
 
 ## 4 Realisieren
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  | 06.09.22      |Veljkovic Simon           |60 Minuten               |90 Minuten                   |
+| 1.A | 06.09.22       |Veljkovic Simon           |60 Minuten               |90 Minuten                   |
 | 2.A | 06.09.22       |Veljkovic Simon           |60 Minuten               |90 Minuten                   |
 | 3.A | 06.09.22       |Veljkovic Simon           |60 Minuten               |90 Minuten                   |
-| 4.A | 06.09.22       |Veljkovic Simon           |60 Minuten               |nicht verwirklicht
+| 4.A | 06.09.22       |Veljkovic Simon           |60 Minuten               |90 Minuten                   |
+| 5.A | 06.09.22       |Veljkovic Simon           |60 Minuten               |nicht verwirklicht           |
 
-✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
+
 
 ## 5 Kontrollieren
 
@@ -73,20 +76,22 @@ Total: 240 Minuten (4 Stunden)
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  | 13.09.22      |funktioniert          |Simon Veljkovic        |
+| 2.1  | 13.09.22      |funktioniert          |Simon Veljkovic        |
+| 3.1  | 13.09.22      |funktioniert          |Simon Veljkovic        |
+| 4.1  | 13.09.22      |funktioniert          |Simon Veljkovic        |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Alles funktioniert, nur die "Kann" User Story konnte nicht umgesetzt werden.
 
 ### 5.2 Exploratives Testen
 
 | BR-№ | Ausgangslage | Eingabe | Erwartete Ausgabe | Tatsächliche Ausgabe |
 | ---- | ------------ | ------- | ----------------- | -------------------- |
-| I    |              |         |                   |                      |
-| ...  |              |         |                   |                      |
+| I    |Benutzer startet das Spiel| hiqhfb |Spiel wird beendet  |Spiel stürzt ab |
 
-✍️ Verwenden Sie römische Ziffern für Ihre Bug Reports, also I, II, III, IV etc.
+
+✍️ Ausgeführt von Rebecca Willi
 
 ## 6 Auswerten
 
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
+
