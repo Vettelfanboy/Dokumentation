@@ -92,6 +92,6 @@ Alles funktioniert, nur die "Kann" User Story konnte nicht umgesetzt werden.
 
 ✍️ Ausgeführt von Rebecca Willi
 
-## 6 Auswerten
+https://github.com/Vettelfanboy/Lernbericht/blob/main/README.md
 
 
